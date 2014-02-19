@@ -1,0 +1,11 @@
+movie:
+    resource: "@MovieBundle/Resources/config/routing.xml"
+    prefix:   /
+
+enjoy_crawler:
+    resource: "@EnjoyCrawlerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+enjoy_main:
+    resource: "@EnjoyMainBundle/Resources/config/routing.yml"
+    prefix:   /

@@ -1,0 +1,38 @@
+Enjoy\MainBundle\Entity\Movie:
+    type: entity
+    table: movie
+    oneToMany:
+        dates:
+            targetEntity: MovieDate
+            mappedBy: movie
+            cascade: [persist]
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 100
+        img_url:
+            type: string
+            length: 255
+        description:
+            type: text
+            nullable: true
+        originalName:
+            type: string
+            length: 100
+            nullable: true
+        length:
+            type: string
+            length: 50
+            nullable: true
+        direction:
+            type: string
+            length: 100
+            nullable: true
+        cast:
+            type: text
+            nullable: true
+

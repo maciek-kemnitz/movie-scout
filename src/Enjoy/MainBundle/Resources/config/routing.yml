@@ -1,0 +1,11 @@
+enjoy_main_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: EnjoyMainBundle:Default:index }
+
+show:
+    pattern:  /show/{date}
+    defaults: { _controller: EnjoyMainBundle:Default:show, date:null }
+home_page:
+    pattern:  /
+    defaults: { _controller: EnjoyMainBundle:HomePage:index }
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" namespace="Enjoy\MovieBundle\Model" defaultIdMethod="native" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/1.6/database.xsd">
+    <table name="movie" phpName="Movie" idMethod="native" baseClass="Enjoy\MovieBundle\Model\Movie" allowPkInsert="true">
+        <column name="id" phpName="Id" type="INTEGER" primaryKey="true" autoIncrement="true" required="true"/>
+        <column name="name" phpName="Name" type="VARCHAR" size="255" required="true"/>
+        <vendor type="mysql">
+            <parameter name="Engine" value="InnoDB"/>
+        </vendor>
+    </table>
+</database>
